@@ -17,19 +17,22 @@
 
     <!-- Menu de navigation -->
     <ul id="navbar">
+        <p class="scroll" onclick="toggleMenu()">X</p>
+
         <li><img class="logo" src="Logo.png" height="60px" alt="Logo"></li>
         <li><a href="./index.html">Accueil</a></li>
         <li><a href="./service.html">Nos services</a></li>
         <li><a href="./contact.html">Contact</a></li>
         <li><a class="active" href="info.html">À propos de nous</a></li>
     </ul>
+    <p id="menu-toggle" class="scroll" onclick="toggleMenu()">☰</p>
 
 
     <!-- Section vidéo de fond -->
     <div class="video-background">
         <video autoplay muted loop>
             <source src="./background.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la vidéo.
+            Votre navigateur ne supporte pas la vidéo. 
         </video>
     </div>
 
@@ -112,7 +115,10 @@
         function toggleMenu() {
             var navbar = document.getElementById("navbar");
             navbar.classList.toggle("responsive");
+
         }
+      
+        toggleMenu()
     </script>
 
 </body>

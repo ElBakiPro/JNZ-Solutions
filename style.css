@@ -62,7 +62,9 @@ ul#navbar .logo {
 }
 
 
-
+.scroll{
+  display: none;
+}
 
 
 /* Titre principal */
@@ -102,6 +104,43 @@ nav {
   z-index: 10; /* Priorité élevée pour être au-dessus des autres éléments */
   height: 60px; /* Hauteur fixe */
 }
+ul#navbar{
+  white-space: pre;
+
+}
+ul#navbar li {
+  float: left;
+  margin-left: 0;
+}
+ul#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
+}
+.logo{
+  display: none;
+}
+.responsive{
+  display: none;
+}
+.scroll{
+  display: block;
+}
+/* Classe responsive pour afficher le bouton */
+#menu-toggle {
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  margin: 10px;
+}
+
+/* Masquer le bouton lorsque le menu est ouvert */
+#menu-toggle.hidden {
+  display: block;
+}
+
 }
 
 /* Contenu superposé (texte, images, etc.) */
