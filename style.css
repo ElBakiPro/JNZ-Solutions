@@ -84,7 +84,7 @@ ul#navbar .logo {
   z-index: 2;
   padding: 50px;
   background: rgba(255, 255, 255, 0.5); /* Couche semi-transparente */
-  backdrop-filter: blur(3px); /* Intensité du flou */
+  backdrop-filter: blur(5px); /* Intensité du flou */
   border-radius: 10px;
   margin: 20px auto;
   max-width: 80%;
