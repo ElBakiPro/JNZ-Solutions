@@ -326,6 +326,10 @@ form .pied-formulaire button{
 form .pied-formulaire button:hover{ /*Pseudo Element*/
   transform: scale(1.1);
 }
+.bouton{
+  font-size:10px !important;
+  color: #949393 !important;
+}
 
 /* Responsivité pour le footer */
 @media screen and (max-width:920px){
