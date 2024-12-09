@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNZ Solution - Accueil</title>
+    
+    <!-- Ajout des nouvelles polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Menu de navigation -->
+    <div><ul id="navbar">
+        <li><img class="logo" src="Logo.png" height="60px" alt="Logo"></li>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./service.html">Nos services</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a class="active" href="info.html">À propos de nous</a></li>
+    </ul>
+</div>
+
+
+    <!-- Section vidéo de fond -->
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="./background.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+    </div>
+
+    <!-- Titre de la page -->
+    <div id="Titre">
+        <h1>JNZ Solutions</h1>
+        <h2>Maintenance Maitrisée, Technologie Optimisée</h2>
+    </div>
+
+    <!-- Section image avec texte -->
+    <div id="box">
+        <img src="./pexels-brett-sayles-2881224.jpg" alt="Câblage réseau informatique pour serveur" width="400px" height="400px">
+        <div class="text">
+            <h3>Votre partenaire en informatique</h3>
+            <p>Chez JNZ Solutions, nous vous offrons des services d'infogérance et de maintenance de parc informatique
+                adaptés aux besoins de votre entreprise. Notre équipe d'experts veille sur vos systèmes pour vous
+                garantir performance et sécurité à tout moment.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>À propos de JNZ Solutions</h3>
+                <p>JNZ Solutions est une SARL spécialisée dans l'infogérance et la maintenance de parc informatique. Avec une équipe dynamique de 3 experts, nous assurons la gestion de vos systèmes informatiques pour une performance maximale. Tous les équipements bénéficient d’une garantie complète : 1 an constructeur et 1 an supplémentaire assuré par JNZ Solutions.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./service.html">Nos services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="info.html">À propos de nous</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p>Email : contact@jnzsolutions.fr</p>
+                <p>Téléphone : +33 1 23 45 67 89</p>
+                <p>Adresse : 12 Rue C'est pas la question, 75000 Paris, France</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 JNZ Solutions - Tous droits réservés</p>
+            <p>Site réalisé par : JNZ Solutions - hébergé par JNZ Solutions</p>
+        </div>
+    </footer>
+
+    <script defer>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("responsive");
+        }
+    </script>
+
+</body>
+
+</html>

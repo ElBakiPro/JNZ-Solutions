@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNZ Solution - Nos Services</title>
+    
+    <!-- Ajout des nouvelles polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Menu de navigation -->
+    <ul id="navbar">
+        <li><img class="logo" src="Logo.png" height="60px" alt="Logo"></li>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./service.html">Nos services</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a class="active" href="info.html">À propos de nous</a></li>
+    </ul>
+
+
+    <!-- Section vidéo de fond -->
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="./background.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+    </div>
+
+    <!-- Titre de la page -->
+    <div id="Titre">
+        <h1>Votre infrastructure IT, notre priorité</h1>
+        <h2>Installation et maintenance adaptées à vos besoins professionnels.</h2>
+    </div>
+
+    <!-- Section image avec texte -->
+    <div id="box">
+        <img src="./gestion-du-parc-informatique-dentreprise-.jpg" alt="gestion-du-parc-informatique-dentreprise" width="400px" height="400px">
+        <div class="text">
+            <h3>Installation de parc informatique</h3>
+            <p>Nous assurons l’installation complète de votre parc informatique, en respectant vos besoins spécifiques. Que ce soit pour des postes de travail, des serveurs, des périphériques réseau, ou des solutions logicielles, nous garantissons une mise en place rapide et efficace. Faites confiance à nos experts pour concevoir une infrastructure stable et évolutive, adaptée à votre activité.</p>
+        </div>
+    </div>
+    <div id="box">
+        <div class="text">
+            <h3>Maintenance préventive et curative</h3>
+            <p>Optimisez les performances et la durée de vie de vos équipements grâce à notre service de maintenance.</p>
+            <p>Nous proposons :</p>
+            <li>Maintenance préventive : contrôles réguliers, mises à jour système et vérifications matérielles.</li>
+            <li>Maintenance curative : diagnostics rapides et interventions ciblées pour minimiser les interruptions en cas de panne ou de dysfonctionnement.</li>
+        </div>
+        <img src="./Installation-configuration-maintenance-serveurs.jpg" alt="gestion-du-parc-informatique-dentreprise" width="400px" height="400px">
+    </div>
+    <div id="box">
+        <img src="./security.jpg" alt="gestion-du-parc-informatique-dentreprise" width="400px" height="400px">
+        <div class="text">
+            <h3>Gestion de réseau et cybersécurité</h3>
+            <p>Confiez-nous la gestion de votre réseau pour une connectivité fluide et sécurisée. Nous veillons à la mise en place de configurations réseau fiables et développons des solutions de cybersécurité sur mesure pour protéger vos données sensibles contre les menaces.</p>
+    </div>
+    </div>
+    <div id="box">
+        <div class="text">
+            <h3>Support technique personnalisé</h3>
+            <p>Notre équipe est à votre disposition pour répondre à vos questions et résoudre vos problèmes techniques. Que ce soit sur site ou à distance, nous sommes prêts à vous accompagner dans l'utilisation quotidienne de votre parc informatique.</p>
+    </div>
+    <img src="./téléassistance.png" alt="gestion-du-parc-informatique-dentreprise" width="400px" height="400px">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>À propos de JNZ Solutions</h3>
+                <p>JNZ Solutions est une SARL spécialisée dans l'infogérance et la maintenance de parc informatique.
+                    Avec une équipe dynamique de 3 experts, nous assurons la gestion de vos systèmes informatiques
+                    pour une performance maximale.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./service.html">Nos services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="info.html">À propos de nous</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p>Email : contact@jnzsolutions.fr</p>
+                <p>Téléphone : +33 1 23 45 67 89</p>
+                <p>Adresse : 12 Rue C'est pas la question, 75000 Paris, France</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 JNZ Solutions - Tous droits réservés</p>
+            <p>Site réalisé par : JNZ Solutions - hébergé par JNZ Solutions</p>
+        </div>
+    </footer>
+
+    <script defer>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("responsive");
+        }
+    </script>
+
+</body>
+
+</html>

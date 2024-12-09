@@ -1,0 +1,356 @@
+/* Styles généraux */
+/* Vidéo en arrière-plan */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place la vidéo derrière tous les éléments */
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que la vidéo couvre tout l'écran sans déformation */
+}
+
+/* Contenu par-dessus la vidéo */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Assure une bonne lisibilité sur le fond vidéo */
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation */
+ul#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; /* Place la navbar au-dessus de la vidéo */
+}
+
+ul#navbar li {
+  float: left;
+  margin-left: 150px;
+}
+
+ul#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul#navbar li a:hover {
+  background-color: #555;
+}
+
+ul#navbar .logo {
+  float: left;
+  padding: 5px 10px;
+}
+
+
+
+
+
+/* Titre principal */
+#Titre {
+  text-align: center;
+  padding-top: 15%;
+  z-index: 2; /* Assure que le texte est visible par-dessus la vidéo */
+  position: relative;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.2); /* Améliore la lisibilité */
+}
+
+/* Contenu avec une section */
+
+
+#box {
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.5); /* Couche semi-transparente */
+  backdrop-filter: blur(3px); /* Intensité du flou */
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 80%;
+  color: #fff;
+}
+
+/* Responsivité */
+@media screen and (max-width: 768px) {
+nav {
+  position: fixed; /* La barre reste en haut */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+  z-index: 10; /* Priorité élevée pour être au-dessus des autres éléments */
+  height: 60px; /* Hauteur fixe */
+}
+}
+
+/* Contenu superposé (texte, images, etc.) */
+#Titre {
+    text-align: center;
+    padding-top: 15%;
+    position: relative;
+    z-index: 2; /* Assure que le texte est visible par-dessus la vidéo */
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Améliore la lisibilité */
+}
+
+#box {
+    position: relative;
+    z-index: 2;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.6); /* Ajoute un fond semi-transparent pour les sections */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+    color: #fff;
+}
+
+/* Titre principal */
+
+
+#Titre h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+#Titre h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.8rem;
+  color: #ccc;
+}
+
+/* Section image avec texte */
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: transparent; /* Supprime le fond blanc */
+  border: none;
+}
+
+#box img {
+  max-width: 100%;
+  height: auto;
+  border: none; /* Supprime les bordures */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre subtile */
+  border-radius: 10px; /* Coins arrondis pour un style plus moderne */
+
+}
+
+#box .text {
+  max-width: 50%;
+  margin-left: 20px;
+}
+
+#box .text h3 {
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+#box .text p {
+  font-size: 1.1rem;
+  color: #fffefe;
+  line-height: 1.8;
+}
+
+/* Responsivité */
+@media screen and (max-width: 768px) {
+  #box {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  #box .text {
+      margin-left: 0;
+      max-width: 100%;
+  }
+}
+/* Footer principal */
+footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Fond sombre avec transparence */
+  color: white; /* Texte en blanc */
+  padding: 40px 20px; /* Espacement interne */
+  font-family: 'Poppins', sans-serif; /* Police moderne */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Répartit les sections horizontalement */
+  flex-wrap: wrap; /* Permet de s'adapter aux petits écrans */
+  max-width: 1200px; /* Largeur maximale du contenu */
+  margin: 0 auto; /* Centre horizontalement */
+}
+
+.footer-section {
+  width: 30%; /* Chaque section prend 30% de largeur */
+  margin-bottom: 20px; /* Espacement vertical entre sections */
+  padding: 0 10px; /* Espacement interne des sections */
+}
+
+.footer-section h3 {
+  font-size: 1.5rem; /* Taille des titres des sections */
+  margin-bottom: 15px;
+  font-family: 'Nunito', sans-serif; /* Titre avec une autre police */
+  border-bottom: 2px solid #555; /* Ligne sous le titre */
+  padding-bottom: 5px;
+}
+
+.footer-section p, .footer-section a {
+  font-size: 0.9rem;
+  line-height: 1.6; /* Espace entre les lignes */
+  color: #ddd; /* Texte légèrement plus clair que le fond */
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #FFD700; /* Couleur dorée au survol */
+}
+
+/* Liens rapides */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ddd; /* Texte des liens */
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #FFD700; /* Texte des liens au survol */
+}
+
+/* Contact */
+.footer-section.contact p {
+  margin-bottom: 10px;
+}
+
+/* Bas du footer */
+.footer-bottom {
+  text-align: center; /* Centré */
+  border-top: 1px solid #444; /* Ligne séparatrice */
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 0.8rem;
+  color: #aaa; /* Texte légèrement plus clair */
+}
+
+/* Section Formulaire de Contact */
+
+form{
+  background: rgba(0, 0, 0, 0.6); /* Ajoute un fond semi-transparent */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+form .corps-formulaire{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form .corps-formulaire .groupe{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form .corps-formulaire .gauche .groupe input{
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #c9c9c9;
+  outline-color: gold;
+  border-radius: 5px;
+}
+
+form .corps-formulaire .droite{
+  margin-left: 50px;
+}
+
+form .corps-formulaire .droite .groupe{
+  height: 100%;
+}
+
+form .corps-formulaire .droite .groupe textarea{
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 2px solid gold;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 72%;
+}
+
+form .pied-formulaire button{
+  margin-top: 40px;
+  background-color: rgb(255, 220, 80);
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+form .pied-formulaire button:hover{ /*Pseudo Element*/
+  transform: scale(1.1);
+}
+
+/* Responsivité pour le footer */
+@media screen and (max-width:920px){
+  form .corps-formulaire .droite{
+    margin-left: 0px; 
+    width: 82%;
+  }
+}
+
+/* Responsivité pour le footer */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column; /* Aligne les sections verticalement */
+      text-align: center;
+  }
+
+  .footer-section {
+      width: 100%; /* Chaque section prend toute la largeur */
+  }
+
+  .footer-section h3 {
+      font-size: 1.2rem; /* Réduit la taille des titres */
+  }
+
+  .footer-bottom {
+      font-size: 0.7rem; /* Réduit le texte en bas */
+  }
+}

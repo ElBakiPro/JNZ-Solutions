@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNZ Solution - A propos de nous</title>
+    
+    <!-- Ajout des nouvelles polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Menu de navigation -->
+    <ul id="navbar">
+        <li><img class="logo" src="Logo.png" height="60px" alt="Logo"></li>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./service.html">Nos services</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a class="active" href="info.html">À propos de nous</a></li>
+    </ul>
+
+
+    <!-- Section vidéo de fond -->
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="./background.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+    </div>
+
+    <!-- Titre de la page -->
+    <div id="Titre">
+        <h1>Notre Histoire</h1>
+        <h2>Trois experts, une passion, des solutions IT sur mesure.</h2>
+    </div>
+
+    <!-- Section image avec texte -->
+    <div id="box">
+        <div class="text">
+            <h3>À propos de nous</h3>
+            <p>Chez JNZ Solutions, notre aventure a débuté avec une vision claire : 
+                simplifier et optimiser la gestion informatique pour les entreprises modernes. 
+                Fondée par trois passionnés de technologie — Maërone Jeanlys, Erol Noksan, et Ales Zaddi</p>
+            <p>Notre entreprise tire son nom de l’union de nos initiales, un symbole de collaboration, de complémentarité et d’engagement.</p>
+        </div>
+        <div class="text">
+            <h3>Une histoire d’ambition et de passion</h3>
+            <p>Nous avons tous commencé notre parcours dans le domaine de l’informatique avec une envie commune : 
+                apporter des solutions fiables et sur mesure aux défis technologiques des entreprises. 
+                En combinant nos expertises en installation, maintenance et sécurité informatique, 
+                nous avons construit une entreprise qui place la satisfaction de ses clients au cœur de ses priorités.</p>
+        </div>
+    </div>
+    <div id="box">
+        <img src="./3guy.jpg" alt="gestion-du-parc-informatique-dentreprise" width="400px" height="400px">
+        <div class="text">
+            <h3>Notre mission</h3>
+            <p>Offrir des services IT qui ne se contentent pas de répondre aux besoins actuels, mais qui anticipent également les défis futurs. Nous croyons en l’innovation, la transparence et l’écoute, des valeurs qui guident chacun de nos projets.</p>
+            <h3>Pourquoi nous choisir ?</h3>
+            <li>Une équipe fondée sur l’expertise et la complémentarité.</li>
+            <li>Une approche personnalisée pour chaque client.</li>
+            <li>Une volonté de bâtir des relations de confiance à long terme.</li>
+            <p>Chez JNZ Solutions, nous ne sommes pas seulement vos prestataires IT : nous sommes vos partenaires pour un avenir technologique performant et sécurisé.</p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>À propos de JNZ Solutions</h3>
+                <p>JNZ Solutions est une SARL spécialisée dans l'infogérance et la maintenance de parc informatique.
+                    Avec une équipe dynamique de 3 experts, nous assurons la gestion de vos systèmes informatiques
+                    pour une performance maximale.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./service.html">Nos services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="info.html">À propos de nous</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p>Email : contact@jnzsolutions.fr</p>
+                <p>Téléphone : +33 1 23 45 67 89</p>
+                <p>Adresse : 12 Rue C'est pas la question, 75000 Paris, France</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 JNZ Solutions - Tous droits réservés</p>
+            <p>Site réalisé par : JNZ Solutions - hébergé par JNZ Solutions</p>
+        </div>
+    </footer>
+
+    <script defer>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("responsive");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNZ Solution - Contact</title>
+    
+    <!-- Ajout des nouvelles polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Menu de navigation -->
+    <ul id="navbar">
+        <li><img class="logo" src="Logo.png" height="60px" alt="Logo"></li>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./service.html">Nos services</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a class="active" href="info.html">À propos de nous</a></li>
+    </ul>
+
+
+    <!-- Section vidéo de fond -->
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="./background.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+    </div>
+
+    <!-- Titre de la page -->
+    <div id="Titre">
+        <h1>JNZ Solutions</h1>
+        <h2>Maintenance Maitrisée, Technologie Optimisée</h2>
+    </div>
+
+    <!-- Section image avec Formulaire -->
+    <div id="box">
+        <img src="./Image contact.png" alt="Hotline" width="400px" height="400px">
+        <div class="text">
+            <form action="">
+                <h1>Contactez nous !</h1>
+                <div class="separation"></div>
+                <div class="corps-formulaire">
+                    <div class="gauche">
+                        <div class="groupe">
+                            <label>Votre Nom</label>
+                            <input type="text">
+                        </div>
+                        <div class="groupe">
+                            <label>Votre Adresse mail</label>
+                            <input type="text">
+                        </div>
+                        <div class="groupe">
+                            <label>Téléphone</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="droite">
+                        <div class="groupe">
+                            <label>Message</label>
+                            <textarea placeholder="Saisissez ici..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pied-formulaire" align="center">
+                    <button>Envoyer le Message</button>
+                    <p>Données non stockées</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>À propos de JNZ Solutions</h3>
+                <p>JNZ Solutions est une SARL spécialisée dans l'infogérance et la maintenance de parc informatique.
+                    Avec une équipe dynamique de 3 experts, nous assurons la gestion de vos systèmes informatiques
+                    pour une performance maximale.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./service.html">Nos services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="info.html">À propos de nous</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p>Email : contact@jnzsolutions.fr</p>
+                <p>Téléphone : +33 1 23 45 67 89</p>
+                <p>Adresse : 12 Rue C'est pas la question, 75000 Paris, France</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 JNZ Solutions - Tous droits réservés</p>
+            <p>Site réalisé par : JNZ Solutions - hébergé par JNZ Solutions</p>
+        </div>
+    </footer>
+
+    <script defer>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("responsive");
+        }
+    </script>
+
+</body>
+
+</html>
